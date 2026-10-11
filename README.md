@@ -2,7 +2,7 @@
 
 『神農本草經』（孫星衍・孫馮翼 輯，1799）の原文を，薬ごと・段落ごとの小さな単位に分け，資料間の異同（校異）・校訂，他の輯本・本草書・注釈書の対応する条（原文），現代語訳（日本語・英語）と組み合わせたもの。人が読むためだけでなく，LLM が読みやすいことを目指して，1単位を1ファイルにし，ファイルの頭に機械で読める情報（YAML）を付けている。
 
-**現在の状況**：原文（全819単位）・校異・校訂・他の資料の条・注釈書（原文）ができている（2026-10-11）。日本語訳・英訳は作業中。姉妹編に[傷寒論](https://github.com/medicalcloud/shokanron)・[金匱要略](https://github.com/medicalcloud/kinkiyoryaku)・[黄帝内経](https://github.com/medicalcloud/koteidaikei)がある。
+**現在の状況**：原文（全818単位）・校異・校訂・他の資料の条・注釈書（原文）と，訳の範囲の日本語訳・英訳ができている（2026-10-11）。姉妹編に[傷寒論](https://github.com/medicalcloud/shokanron)・[金匱要略](https://github.com/medicalcloud/kinkiyoryaku)・[黄帝内経](https://github.com/medicalcloud/koteidaikei)がある。
 
 ## 構成
 
@@ -38,8 +38,8 @@ NN_篇/
 
 - **底本**：中醫笈成（jicheng.tw）の『神農本草經』（孫星衍・孫馮翼輯。中醫笈成の底本は問經堂叢書本）。句読点は中醫笈成のもの。日本の新字体に変換した（字体の方針は `字体と変換の方針.md`）。簡体字から戻したときに生じたらしい一対多の字の誤り（「陶弘景雲」→云，「生川穀」→川谷，「範子計然」→范，「肉鬆蓉」→松，「症瘕」→癥 など）は，全用例を文脈つきで確かめて直した（校異には記さない）。中醫笈成本で見出しのない薬（五色石脂・黑芝・蠡魚・雷丸）は，段落の形から分けた。
 - **照合した孫本の別の版**：Wikisource「神農本草經 (孫星衍)」，殆知閣「神农本草经」（孫星衍），行政院中醫藥委員會の文本 CM098（中醫笈成「神農本草經_2」。本文だけ）。Wikisource 本と殆知閣本は同じ電子テキストの系統で，共通の変換の誤り（「毒瓦斯」「浓朴」「野狼毒」など）や欠字がある。
-- **校異**：孫本の別の版と底本の字句の違い（256件）。「X は「…」に作る」「…の間に，X は「…」がある」の形。字体・異体字・繁簡の違い，古今字（臓/蔵・腑/府・仙/僊），簡体字では区別できない字（殆知閣本の並/并・著/着・於/于・覆/復 など），句読点，他の資料の欠落，資料自体の変換の誤り・文字化けは記していない。
-- **校訂**：本文などを改めたところ（85か所。見出しの名5を含む）。資料を比べて一番それらしい字を採り，資料が一致しなくても改めた。【校訂】に元の字句と各資料の字・理由を記した。孫星衍が意図して古い字を使ったもの（瘨・痙・要・卮 など）は改めていない。
+- **校異**：孫本の別の版と底本の字句の違い（258件）。「X は「…」に作る」「…の間に，X は「…」がある」の形。字体・異体字・繁簡の違い，古今字（臓/蔵・腑/府・仙/僊），簡体字では区別できない字（殆知閣本の並/并・著/着・於/于・覆/復 など），句読点，他の資料の欠落，資料自体の変換の誤り・文字化けは記していない。
+- **校訂**：本文などを改めたところ（86か所。見出しの名5を含む）。資料を比べて一番それらしい字を採り，資料が一致しなくても改めた。【校訂】に元の字句と各資料の字・理由を記した。孫星衍が意図して古い字を使ったもの（瘨・痙・要・卮 など）は改めていない。
 - **他の資料の条（原文）**：各薬に，次の資料の対応する条を引いた（名の別名・異体で対応させた）。
   - 輯本：行政院中醫藥委員會の文本 CM096（中醫笈成「神農本草經_1」。序錄を卷一とする四卷本），編者不明の通行本（Wikisource「神農本草經」）
   - 本草書：『證類本草』（中醫笈成。重修政和證類本草。条の最初の段落＝本經と別錄の文だけ），『新修本草』（中醫笈成。天平三年古寫本の影鈔本。条の最初の段落だけ。残っていない巻の薬はない），『名醫別錄』『吳普本草』（中醫笈成の輯本）
@@ -61,4 +61,4 @@ NN_篇/
 
 ## English summary
 
-This repository presents the *Shennong bencao jing* (Divine Farmer's Classic of Materia Medica) as compiled by Sun Xingyan and Sun Fengyi (1799), split into one file per drug or paragraph with YAML metadata. Each drug file contains the punctuated original text (the classic text with the quotations from *Wu Pu bencao* and *Mingyi bielu* and Sun's notes), textual variants and emendations, the corresponding entries from other compilations and materia medica (*Zhenglei bencao*, *Xinxiu bencao*, etc.), and the commentaries of Xu Dachun and Chen Xiuyuan (original text only). Japanese and English translations are in progress. The base text is the edition on Zhongyi Jicheng (jicheng.tw, CC0). Classical texts are in the public domain; new material is CC BY 4.0. Translations were produced with an LLM and may contain errors; not for clinical use.
+This repository presents the *Shennong bencao jing* (Divine Farmer's Classic of Materia Medica) as compiled by Sun Xingyan and Sun Fengyi (1799), split into one file per drug or paragraph with YAML metadata. Each drug file contains the punctuated original text (the classic text with the quotations from *Wu Pu bencao* and *Mingyi bielu* and Sun's notes), textual variants and emendations, the corresponding entries from other compilations and materia medica (*Zhenglei bencao*, *Xinxiu bencao*, etc.), and the commentaries of Xu Dachun and Chen Xiuyuan (original text only). Japanese and English translations are provided for the classic text, the Wu Pu and Mingyi quotations, the prefatory and closing sections, and the appendices. The base text is the edition on Zhongyi Jicheng (jicheng.tw, CC0). Classical texts are in the public domain; new material is CC BY 4.0. Translations were produced with an LLM and may contain errors; not for clinical use.

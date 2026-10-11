@@ -1,0 +1,21 @@
+title: 神農本草経（孫星衍輯本）原文・注・現代語訳
+description: 孫星衍・孫馮翼輯『神農本草經』の原文，校異・校訂，他の輯本・本草書・注釈書の条（原文），日本語訳・英訳と解説
+lang: ja
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+relative_links:
+  enabled: true
+  collections: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
+  - LICENSE

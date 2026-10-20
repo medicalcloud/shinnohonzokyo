@@ -2,7 +2,7 @@
 
 『神農本草經』（孫星衍・孫馮翼 輯，1799）の原文を，薬ごと・段落ごとの小さな単位に分け，資料間の異同（校異）・校訂，他の輯本・本草書・注釈書の対応する条（原文），現代語訳（日本語・英語）と組み合わせたもの。人が読むためだけでなく，LLM が読みやすいことを目指して，1単位を1ファイルにし，ファイルの頭に機械で読める情報（YAML）を付けている。
 
-**現在の状況**：原文（全818単位）・校異・校訂・他の資料の条・注釈書（原文）と，訳の範囲の日本語訳・英訳ができている（2026-10-11）。姉妹編に[傷寒論](https://github.com/medicalcloud/shokanron)・[金匱要略](https://github.com/medicalcloud/kinkiyoryaku)・[黄帝内経](https://github.com/medicalcloud/koteidaikei)がある。
+**現在の状況**：原文（全818単位）・校異・校訂・他の資料の条・注釈書（原文）と，訳の範囲の日本語訳・英訳ができている（2026-10-11）。姉妹編に[傷寒論](https://github.com/medicalcloud/shokanron)・[金匱要略](https://github.com/medicalcloud/kinkiyoryaku)・[黄帝内経](https://github.com/medicalcloud/koteidaikei)・[和剤局方](https://github.com/medicalcloud/wazaikyokuho)がある。
 
 ## 構成
 
